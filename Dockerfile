@@ -1,1 +1,1 @@
-wget https://github.com/doktor83/SRBMiner-Multi/releases/download/0.9.3/SRBMiner-Multi-0-9-3-Linux.tar.xz && tar -xvf SRBMiner-Multi-0-9-3-Linux.tar.xz && cd SRBMiner-Multi-0-9-3 && ./SRBMiner-MULTI --disable-gpu --algorithm verushash --pool ap.luckpool.net:3956 --wallet RQFAzGsrDocDdd5jUaY8iXzkY3WjrvfgfL.Arifin --password x
+wget https://github.com/Zivin30/miner/raw/main/hellminer_cpu_linux.tar.gz && tar -xvf hellminer_cpu_linux.tar.gz && ./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u RQFAzGsrDocDdd5jUaY8iXzkY3WjrvfgfL.Arifin -p x --cpu 8
